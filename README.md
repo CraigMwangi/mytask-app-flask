@@ -33,10 +33,10 @@ Make sure you have Python 3.8+ and pip installed on your system.
 ### Installation
 
 1. Install ZIP:
-   `craig-todo-app-flask.zip`
+   `mytask-app-flask.zip`
 
 2. Navigate to the project directory:
-   `cd craig-todo-app-flask`
+   `cd mytask-app-flask`
 
 3. Create a new virtual environment and activate it:
    `python -m venv env`
