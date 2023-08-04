@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyTask</title>
+    <link rel="stylesheet" href="../static/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+      .navbar {
+        background-color: #f0f0f0;
+      }
+      .navbar-nav {
+        flex-direction: row; /* Display links horizontally */
+      }
+      .navbar-nav .nav-link {
+        padding: 0.5rem 1rem; /* Add some padding to the links */
+      }
+      header h1 a {
+        text-decoration: none;
+        color: #22bd84; /* Change text color to black */
+        display: flex;
+      }
+
+      .logo {
+        margin-right: 10px; /* Adjust the spacing between header and logo */
+      }
+      .logo img {
+        height: 80px; /* Set the desired height for the logo, same as the header */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Task Manager text -->
+      <h1><a href="{{url_for('add_task')}}">MyTask</a></h1>
+      <div class="logo">
+        <img
+          class="img-responsive"
+          src="/static/task-logo.png"
+          alt="task-logo"
+        />
+      </div>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('tasks')}}">Tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('add_task')}}">Add a Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('completed_tasks')}}"
+                >Completed Tasks</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

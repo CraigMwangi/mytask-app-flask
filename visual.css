@@ -1,0 +1,69 @@
+/* Page Container */
+#page-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 24px;
+}
+
+/* Task List */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+}
+
+/* Task Item */
+.task {
+  cursor: move;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.task.completed {
+  background-color: lightgreen;
+}
+
+.task.priority-high {
+  font-weight: bold;
+}
+
+.task.priority-medium {
+  font-style: italic;
+  color: orange;
+}
+
+.task.priority-low {
+  color: gray;
+}
+
+/* Task Input and Button */
+#task-input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn.red {
+  background-color: red;
+}
+
+.add-btn.orange {
+  background-color: orange;
+}
+
+.add-btn.gray {
+  background-color: gray;
+}

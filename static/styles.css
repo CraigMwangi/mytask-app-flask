@@ -1,0 +1,198 @@
+/* Default styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+/* Light mode */
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #333;
+  color: #333;
+}
+
+/* Page layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header styles */
+header {
+  color: #22bd84;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* .logo {
+  position: relative;
+  left: -300px;
+  bottom: 140px;
+} */
+
+header h1 {
+  margin: 0;
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Task container styles */
+#task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Input and select styles */
+input[type="text"],
+select,
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+select {
+  appearance: none;
+  background-image: url("arrow.png"); /* Add your arrow image here */
+  background-position: right 10px center; /* Adjust the position of the arrow */
+  background-size: 15px; /* Adjust the size of the arrow icon */
+  background-repeat: no-repeat;
+  padding-right: 40px; /* Add space for the arrow */
+}
+
+/* Task list styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.2s ease; /* Add transition for hover effect */
+}
+
+li:hover {
+  background-color: #f7f7f7; /* Change background color on hover */
+  cursor: pointer;
+}
+
+/* Priority-specific styles */
+li.low {
+  color: green;
+}
+
+li.medium {
+  color: orange;
+}
+
+li.high {
+  color: red;
+}
+
+/* Add task button styles */
+.add-btn {
+  display: block;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #22bd84;
+}
+
+/* Completed task list styles */
+#completed-task-list {
+  list-style-type: none;
+  padding: 0;
+  display: none; /* Hide completed tasks list initially */
+}
+
+#completed-task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.2s ease; /* Add transition for hover effect */
+  text-decoration: line-through; /* Add line-through effect for completed tasks */
+}
+
+/* Task title styles */
+.task-title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Clear button styles */
+.clear-btn {
+  display: none; /* Hide the clear button initially */
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.clear-btn:hover {
+  background-color: #333;
+}
+
+/* Footer styles */
+footer {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+  justify-content: space-between;
+}
